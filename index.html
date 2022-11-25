@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,32 +28,93 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>portfolio</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3173718144';
+    var serviceWorkerVersion = '856397543';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f7f8;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "montserrat", sans-serif;
+    }
+
+    .loading {
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border-top: 10px solid rgb(241, 103, 103);
+      position: relative;
+      animation: a1 2s linear infinite;
+    }
+
+    .loading::before,
+    .loading::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      box-sizing: border-box;
+      border-radius: 50%;
+    }
+
+    .loading::before {
+      border-top: 10px solid rgb(236, 184, 86);
+      transform: rotate(120deg);
+    }
+
+    .loading::after {
+      border-top: 10px solid rgb(159, 95, 219);
+      transform: rotate(240deg);
+    }
+
+
+
+    @keyframes a1 {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
 </head>
-<body>
+
+
+
+<body style="overflow: hidden">
+  <div class="loading">
+
+  </div>
+  <script src="main.dart.js" type="application/javascript"></script>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         }
-      }).then(function(engineInitializer) {
+      }).then(function (engineInitializer) {
         return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
+      }).then(function (appRunner) {
         return appRunner.runApp();
       });
     });
   </script>
 </body>
+
 </html>

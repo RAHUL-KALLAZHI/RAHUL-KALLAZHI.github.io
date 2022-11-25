@@ -18,14 +18,15 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-192.png": "2a92bc76aa84f888568daeb68863ee81",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "30f29566a2ab6eba8d9aafa482538f0e",
-"/": "30f29566a2ab6eba8d9aafa482538f0e",
+"index.html": "bfca35d329c4adf0de977791df70281d",
+"/": "bfca35d329c4adf0de977791df70281d",
 "main.dart.js": "a186f45be18307948471caecfc6acd5e",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
+"style.css": "15c50202f7db4bd969a9e6ef955e1e7c",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };
 
